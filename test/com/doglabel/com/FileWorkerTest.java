@@ -1,5 +1,3 @@
-// Tests
-
 package com.doglabel.com;
 
 import org.junit.Test;
@@ -12,17 +10,13 @@ public class FileWorkerTest {
 
     @Test
     public void analyzeShouldReturn32KeywordsFromFile() {
-        File file1 = new File("src/binSearch.java");
+        File file1 = new File("src/flashCard.java");
         String toAnalyze = FileWorker.fileToString(file1);
 
         assertEquals("class\n" +
-                "private\n" + "static\n" + "int\n" + "public\n" + "static\n" +
-                "int\n" + "return\n" + "public\n" + "static\n" + "int\n" +
-                "int\n" + "int\n" + "int\n" + "int\n" + "int\n" + "int\n" +
-                "while\n" + "int\n" + "if\n" + "else\n" + "if\n" + "else\n" +
-                "if\n" + "break\n" + "if\n" + "return\n" + "return\n" +
-                "public\n" + "static\n" + "void\n" + "int\n" + "\n" +
-                "total: 32", FileWorker.analyze(toAnalyze));
+                "private\n" + "private\n" + "public\n" + "public\n" + "return\n" +
+                "public\n" + "void\n" + "public\n" + "return\n" + "public\n" +
+                "void\n" + "\n" + "total: 12", FileWorker.analyze(toAnalyze));
     }
 
     @Test

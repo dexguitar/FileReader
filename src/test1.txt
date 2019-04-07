@@ -1,34 +1,4 @@
+public
 class
-private
-static
-int
-public
-static
-int
-return
-public
-static
-int
-int
-int
-int
-int
-int
-int
-while
-int
-if
-else
-if
-else
-if
-break
-if
-return
-return
-public
-static
-void
-int
 
-total: 32
+total: 2
